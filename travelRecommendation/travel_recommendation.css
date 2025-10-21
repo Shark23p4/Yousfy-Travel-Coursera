@@ -27,7 +27,6 @@ nav {
 
 div{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     justify-content: space-evenly;
     
@@ -37,6 +36,7 @@ section{
     width: 40%;
     margin-left: 15%;
     color: white;
+    padding: 4em;
 }
 
 
@@ -53,4 +53,26 @@ a{
 }
 body{
     height: 100%;
+}
+
+.shaded{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.team_info{
+    flex-direction: column;
+    padding: 5em;
+}
+
+.title_card{
+    border-color: white;
+    border-radius: 2em;
+    background-color: blue;
+    padding: 1em;
+    width: 90%;
 }
