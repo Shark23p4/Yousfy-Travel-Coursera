@@ -37,6 +37,8 @@ section{
     margin-left: 15%;
     color: white;
     padding: 4em;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -75,4 +77,16 @@ h1{
     background-color: blue;
     padding: 1em;
     width: 90%;
+}
+
+.contact_input{
+    border-radius: 2em;
+    border-color: gray;
+    background: none;
+}
+
+.submit_button{
+    border-radius: 2em;
+    background-color: #247479;
+    text-align: center;
 }
