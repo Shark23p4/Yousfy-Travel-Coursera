@@ -1,0 +1,56 @@
+.main_page {
+    background-image: url("mainbg.jpg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #121c1d, #51524e);
+}
+
+.searchbar {
+    background-color: white;
+    color:aquamarine;
+    border-radius: 5em;
+    padding: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 0.5em;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+section{
+    width: 40%;
+    margin-left: 15%;
+    color: white;
+}
+
+
+
+h2{
+    color: white;
+    font-family: serif;
+}
+
+a{
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+}
+body{
+    height: 100%;
+}
