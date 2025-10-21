@@ -1,3 +1,23 @@
+html, body {
+    width: 100%;
+    overflow-x: clip;
+    overflow-y: clip;
+  }
+
+  
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .main_page {
+    padding-left: 0;
+  }
+
 .main_page {
     background-image: url("mainbg.jpg");
     display: flex;
@@ -5,7 +25,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
+    min-height: 90vh;
+    max-height: 90vh;
 }
 
 nav {
@@ -13,6 +34,7 @@ nav {
     align-items: stretch;
     justify-content: space-between;
     background-image: linear-gradient(to right, #121c1d, #51524e);
+    min-height: 10vh;
 }
 
 .searchbar {
@@ -89,4 +111,57 @@ h1{
     border-radius: 2em;
     background-color: #247479;
     text-align: center;
+}
+
+aside{
+    width: 30%; 
+    margin-right: 5%;
+    height: 90vh;
+    overflow-y: auto;
+}
+
+aside::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.separator{
+    width: 100%;
+    border-radius: 1em;
+    height: 2em;
+    background-color: #247479;
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.result{
+    border-radius: 0.5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-items: stretch;
+    height: 50%;
+    margin-bottom: 2em;
+}
+
+.result *:not(.result-image) {
+    margin: 1em;
+  }
+
+.result-image{
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60%;
+    width: 100%;
+}
+
+.result-button{
+    background-color: #247479;
+    border-radius: 0.5em;
+    padding: 1em;
+    text-align: center;
+    color: white;
 }
