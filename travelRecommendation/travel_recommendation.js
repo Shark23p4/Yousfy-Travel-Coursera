@@ -14,7 +14,7 @@ fetch('travel_recommendation_api.json')
 
 function search(){
     let query = document.getElementById("search_input").value;
-    let lcQuery = query.toLowerCase().trim();
+    let lcQuery = query.toLowerCase().replace(/\s+/g, ' ').trim();
     let results = [];
     if(lcQuery == "country" || lcQuery == "countries"){
         results = recommedationsJson.countries;
